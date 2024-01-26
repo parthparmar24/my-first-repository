@@ -1,0 +1,10 @@
+.styledFont {
+  color: green;
+  font-size: large;
+}
+
+#styledImage {
+  border: 10px solid orange;
+  height: 300px;
+  width: 300px;
+}
