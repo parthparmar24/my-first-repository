@@ -1,0 +1,13 @@
+body {
+  margin-top: 20%;
+  padding: 0;
+  background-color: #efeee7;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #333333;
+  text-align: center;
+}
+
+.checkicon {
+  color: green;
+  font-size: 100px;
+}
