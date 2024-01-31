@@ -2,16 +2,52 @@
 <html>
   <head>
     <title>Contact Us Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./CSS/contact_us.css" />
   </head>
   <body>
-    <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" /><br /><br />
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" /><br /><br />
-      <label for="message">Message:</label>
-      <textarea id="message" name="message"></textarea><br /><br />
-      <input type="submit" value="Send" />
-    </form>
+    <main>
+      <h1>KEEP IN TOUCH</h1>
+      <div class="phoneicon">
+        <i class="fa fa-phone"></i>
+      </div>
+      <form id="form" action="https://api.web3forms.com/submit" method="POST">
+        <input
+          type="hidden"
+          name="apikey"
+          value="c5beb18f-fbc9-4525-ae78-31d16504d4f8"
+        />
+        <input
+          type="hidden"
+          name="subject"
+          value="New Submission from Student Bio Contact Form"
+        />
+        <input
+          type="hidden"
+          name="redirect"
+          value="https://parthparmar24.github.io/my-first-repository/thankyou.html"
+        />
+        <input type="hidden" name="from_name" value="Notifications" />
+        <div class="input__container">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="input__container">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="input__container">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <div class="h-captcha" data-captcha="true"></div>
+        <button type="submit" value="submit">Send Message</button>
+      </form>
+    </main>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
   </body>
 </html>
+d
